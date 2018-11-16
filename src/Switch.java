@@ -9,44 +9,28 @@ public class Switch {
 
         if (state == 0) {
             System.out.println("descarcata");
-             if (state == 1) {
-                 System.out.println("incarcata partial");
-                 if (state == 2) {
+            if (state == 1) {
+                System.out.println("incarcata partial");
+                if (state == 2) {
 
-                     System.out.println("incarcata complet");
-                 } else {
-                     System.out.println("eroare");
-                 }
-             }
-                switch (state) {
-                    case 0:
-                        System.out.println("descarcata");
-                        break;
-                    case 1:
-                        System.out.println("incarcata partial");
-                        break;
-                    case 2:
-                        System.out.println("incarcata complet");
-                        break;
-                    default:
-                        System.out.println("eroare");
+                    System.out.println("incarcata complet");
+                } else {
+                    System.out.println("eroare");
                 }
-                        int ora;
-                        Scanner reader = new Scanner(System.in);
-                        ora = reader.nextInt();
-                        String mesaj;
-                        if (ora < 12) {
-                            mesaj = "Neata";
-                        } else {
-                            mesaj = "Salut";
-
-                        }
-                        mesaj = (ora < 12) ? "Neata!" : "Salut";
-                                System.out.println(mesaj);
-
-
             }
-
+            switch (state) {
+                case 0:
+                    System.out.println("descarcata");
+                    break;
+                case 1:
+                    System.out.println("incarcata partial");
+                    break;
+                case 2:
+                    System.out.println("incarcata complet");
+                    break;
+                default:
+                    System.out.println("eroare");
+            }
         }
-
+    }
     }
