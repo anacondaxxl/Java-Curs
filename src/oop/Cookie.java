@@ -9,6 +9,5 @@ public class Cookie {
         weight--;
         form = "ellipse";
 
-
     }
 }

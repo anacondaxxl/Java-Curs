@@ -1,9 +1,9 @@
-package oop;
+package oop.person;
 
 public class Person {
-    private String name;
-    private Integer energy;
-    private Boolean alive = true;
+    protected String name;
+    protected Integer energy;
+    protected Boolean alive = true;
 
     public Person(String name, Integer energy) {
         this.name = name;
@@ -29,4 +29,5 @@ public class Person {
     public void showEnergy() {
         System.out.println(name +"energy: " + energy);
     }
+
 }
