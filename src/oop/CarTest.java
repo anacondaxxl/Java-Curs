@@ -1,19 +1,26 @@
 package oop;
 
-        public class CarTest {
-            public static void main(String[] args) {
-                Car audi = new Car(8f,60,false);          // creem un obiect nou cu  'new"
-                audi.fuel = 60f;
-                audi.fuelConsumation = 8f;
-                audi.started = false;
+public class CarTest {
+    public static void main(String[] args) {
+        Car bmw = new Car();
+        bmw.fuel = 60;
+        bmw.fuelComsumption = 8;
+        bmw.started = false;
 
-            audi.start ();
-            audi.drive(180);
-                audi.drive(600);
-                System.out.println(audi.getFuel());
-                System.out.println(audi.range());
+        Car dacia = new Car();
 
-                audi.wheels = 3;
-            }
+        System.out.println(bmw.range ());
 
+        bmw.start();
+        bmw.drive(180);
+        System.out.println(bmw.range ());
+        bmw.drive(600);
+
+        System.out.println(bmw.fuel);
+        System.out.println(bmw.range ());
+
+        bmw.wheels = 3;
+        System.out.println(bmw.wheels);
+        System.out.println(dacia.wheels);
+    }
 }
